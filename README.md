@@ -20,18 +20,24 @@ Réalisé dans le cadre du cours Scripting Python — B2 CS (EFREI 2025-2026)
 
 ### 1. Cloner le repo
 
+```bash
 git clone https://github.com/ton-user/cybernews-mailer.git
 cd cybernews-mailer
+```
 
 ### 2. Créer un environnement virtuel
 
+```bash
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 source .venv/bin/activate     # Linux/macOS
+```
 
 ### 3. Installer les dépendances
 
+```bash
 pip install requests
+```
 
 ---
 
@@ -62,26 +68,33 @@ Créer un compte gratuit sur https://newsapi.org
 
 Windows (PowerShell) :
 
+```powershell
 $env:NEWS_API_KEY = "ta_cle_api"
 $env:EMAIL_FROM   = "expediteur@gmail.com"
 $env:EMAIL_PASS   = "app_password_16_chars"
 $env:EMAIL_TO     = "destinataire@email.com"
+```
 
 Linux/macOS :
 
+```bash
 export NEWS_API_KEY="ta_cle_api"
 export EMAIL_FROM="expediteur@gmail.com"
 export EMAIL_PASS="app_password_16_chars"
 export EMAIL_TO="destinataire@email.com"
+```
 
 ---
 
 ## Utilisation
 
+```bash
 python news_mailer.py
+```
 
 Exemple de sortie :
 
+```
 Recuperation des news : cybersecurity...
 Cybersecurity News — 03/04/2026
 ==================================================
@@ -92,15 +105,18 @@ Cybersecurity News — 03/04/2026
 
 Email envoye a destinataire@email.com
 Log sauvegarde : news_2026-04-03.txt
+```
 
 ---
 
 ## Structure du projet
 
+```
 cybernews-mailer/
 ├── news_mailer.py       # script principal
 ├── news_YYYY-MM-DD.txt  # log généré automatiquement
 └── README.md
+```
 
 ---
 
