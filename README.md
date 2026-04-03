@@ -132,4 +132,4 @@ cybernews-mailer/
 
 ## Auteur
 
-Miche Achkar — B2 CS — EFREI 2025-2026
+Michel Achkar et Stan Ducos — B2 CS — EFREI 2025-2026
